@@ -7,11 +7,10 @@ int main(void)
 {
 	int sum;
 
-	for (sum = '0'; sum <= '9'; sum++)
-	{
+	for (sum = '0'; sum <= '9'; sum++){
 		putchar(sum);
 		if (sum == '9')
-			break;
+break;
 		putchar(',');
 		putchar(' ');
 	}
