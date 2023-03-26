@@ -11,7 +11,7 @@ int main(void)
 	{
 		for (b = a + 1; b < 10; b++)
 		{
-			putchar(a + '0'(;
+			putchar(a + '0');
 			putchar(b + '0');
 			if (a % 10  == '8' && b % 10 == '9')
 				break;
