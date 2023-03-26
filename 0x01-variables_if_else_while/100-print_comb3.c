@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Program that prints all possible different combinations of two digits.
- * Return: 0(Ptogram ran successfully!)
+ * main - Program that prints all possible different combinations
+ * Return: 0(Program ran successfully!)
  */
 int main(void)
 {
@@ -11,12 +11,14 @@ int main(void)
 	{
 		for (b = a + 1; b < 10; b++)
 		{
-			putchar(a + '0');
-			putchar(b + '0');
-			if (a % 10  == '8' && b % 10 == '9')
+			putchar((a % 10) + '0');
+			putchar((b % 10) + '0');
+
+			if (a == '8' && b == '9')
 				break;
+
 			putchar(',');
-                	putchar(' ');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
